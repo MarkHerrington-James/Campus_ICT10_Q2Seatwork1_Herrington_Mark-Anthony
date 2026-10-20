@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Verification System</title>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module"
+            src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fefeff;
+            text-align: center;
+            padding: 50px 15px;
+        }
+
+        .container {
+            background-color: rgb(1, 132, 255);
+            max-width: 400px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #1565c0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Candidate Verification System</h2>
+        <p>Enter your name to check if you are an ICT club member.</p>
+
+        <input type="text" id="first_name"
+               placeholder="First Name">
+
+        <input type="text" id="last_name"
+               placeholder="Last Name">
+
+        <button py-click="check_candidate">
+            Check Name
+        </button>
+
+        <p id="result"></p>
+    </div>
+
+    <script type="py" src="./main.py"></script>
+</body>
+</html>
